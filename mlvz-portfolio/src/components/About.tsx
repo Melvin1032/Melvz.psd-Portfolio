@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Palette, Code, Zap, Layers } from 'lucide-react';
+import { Palette, Code, Layers } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 const skills = [
