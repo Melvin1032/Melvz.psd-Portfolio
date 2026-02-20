@@ -8,7 +8,7 @@ const skills = [
   { icon: Layers, label: 'UI/UX Design', level: 88 },
 ];
 
-const tools = ['Photoshop', 'Illustrator', 'Figma', 'Blender', 'Cinema 4D'];
+const tools = ['Photoshop', 'Illustrator', 'Figma', 'VSCode', 'Qoder', 'Git', 'GitHub', 'Vercel', ];
 
 export const About = () => {
   const { isDark } = useTheme();
