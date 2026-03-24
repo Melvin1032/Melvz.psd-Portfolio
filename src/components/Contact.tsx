@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send, Instagram, Twitter, Linkedin, Github } from 'lucide-react';
+import { Mail, MapPin, Send, Instagram, Linkedin, Github } from 'lucide-react';
 import { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 

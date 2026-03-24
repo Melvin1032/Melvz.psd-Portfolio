@@ -5,14 +5,9 @@ import { useTheme } from '../contexts/ThemeContext';
 // Import local images
 import gamingCover from '../assets/gaming cover photo.jpg';
 import gamingSolo from '../assets/gaming solo poster.jpg';
-import gamingTeam from '../assets/gaming team banner.jpg';
-import poloDesign1 from '../assets/polo shirt design1.jpg';
-import poloDesign2 from '../assets/polo shirt design2.jpg';
 import esportsJersey1 from '../assets/esports jersey1.jpg';
 import garitanMaroon from '../assets/garitan maroon.jpg';
-import garitanWhite from '../assets/garitan white.jpg';
 import nbaJersey from '../assets/NBA CUT JERSEEY with SHORTS.jpg';
-import virginMary from '../assets/VIRGIN MARY (LAKERS INSPIRED) 2.jpg';
 
 const projects = [
   {
