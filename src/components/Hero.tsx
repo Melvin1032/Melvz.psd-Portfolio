@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Linkedin, Github, Mail } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
 export const Hero = () => {
@@ -123,6 +123,43 @@ export const Hero = () => {
             data-cursor="pointer"
           >
             GET IN TOUCH
+          </a>
+        </motion.div>
+
+        {/* Social Links */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+          className="mt-12 flex gap-6 justify-center"
+        >
+          <a
+            href="https://www.linkedin.com/in/john-melvin-macabeo-3061753b1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 border border-[#ff1a1a]/30 flex items-center justify-center text-[#ff1a1a] hover:bg-[#ff1a1a] hover:text-white transition-all duration-300"
+            data-cursor="pointer"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a
+            href="https://github.com/Melvin1032"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 border border-[#ff1a1a]/30 flex items-center justify-center text-[#ff1a1a] hover:bg-[#ff1a1a] hover:text-white transition-all duration-300"
+            data-cursor="pointer"
+            aria-label="GitHub"
+          >
+            <Github className="w-5 h-5" />
+          </a>
+          <a
+            href="mailto:jmmacabeo32@gmail.com"
+            className="w-10 h-10 border border-[#ff1a1a]/30 flex items-center justify-center text-[#ff1a1a] hover:bg-[#ff1a1a] hover:text-white transition-all duration-300"
+            data-cursor="pointer"
+            aria-label="Email"
+          >
+            <Mail className="w-5 h-5" />
           </a>
         </motion.div>
       </motion.div>

@@ -2,41 +2,53 @@ import { motion } from 'framer-motion';
 import { ProjectCard } from './ProjectCard';
 import { useTheme } from '../contexts/ThemeContext';
 
+// Import local images
+import gamingCover from '../assets/gaming cover photo.jpg';
+import gamingSolo from '../assets/gaming solo poster.jpg';
+import gamingTeam from '../assets/gaming team banner.jpg';
+import poloDesign1 from '../assets/polo shirt design1.jpg';
+import poloDesign2 from '../assets/polo shirt design2.jpg';
+import esportsJersey1 from '../assets/esports jersey1.jpg';
+import garitanMaroon from '../assets/garitan maroon.jpg';
+import garitanWhite from '../assets/garitan white.jpg';
+import nbaJersey from '../assets/NBA CUT JERSEEY with SHORTS.jpg';
+import virginMary from '../assets/VIRGIN MARY (LAKERS INSPIRED) 2.jpg';
+
 const projects = [
   {
     id: 1,
-    title: 'Neon Horizons',
-    category: 'BRAND IDENTITY',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    title: 'Gaming Cover Art',
+    category: 'GRAPHIC DESIGN',
+    image: gamingCover,
     size: 'large' as const,
   },
   {
     id: 2,
-    title: 'Digital Dreams',
-    category: 'WEB DESIGN',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80',
+    title: 'Esports Jersey Design',
+    category: 'APPAREL DESIGN',
+    image: esportsJersey1,
     size: 'medium' as const,
   },
   {
     id: 3,
-    title: 'Cyber Punk',
+    title: 'Gaming Solo Poster',
     category: 'POSTER DESIGN',
-    image: 'https://images.unsplash.com/photo-1563089145-599997674d42?w=800&q=80',
+    image: gamingSolo,
     size: 'medium' as const,
   },
   {
     id: 4,
-    title: 'Retro Wave',
-    category: 'ALBUM ART',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80',
-    size: 'small' as const,
+    title: 'Garitan Maroon',
+    category: 'APPAREL DESIGN',
+    image: garitanMaroon,
+    size: 'medium' as const,
   },
   {
     id: 5,
-    title: 'Future Tech',
-    category: 'UI/UX DESIGN',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80',
-    size: 'large' as const,
+    title: 'NBA Cut Jersey',
+    category: 'APPAREL DESIGN',
+    image: nbaJersey,
+    size: 'medium' as const,
   },
 ];
 

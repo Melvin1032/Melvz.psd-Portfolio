@@ -3,135 +3,122 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 
+// Import local images
+import gamingCover from '../assets/gaming cover photo.jpg';
+import gamingSolo from '../assets/gaming solo poster.jpg';
+import gamingTeam from '../assets/gaming team banner.jpg';
+import poloDesign1 from '../assets/polo shirt design1.jpg';
+import poloDesign2 from '../assets/polo shirt design2.jpg';
+import poloDesign3 from '../assets/polo shirt design3.jpg.jpg';
+import poloDesign4 from '../assets/polo shirt design4.jpg';
+import esportsJersey1 from '../assets/esports jersey1.jpg';
+import garitanMaroon from '../assets/garitan maroon.jpg';
+import garitanWhite from '../assets/garitan white.jpg';
+import nbaJersey from '../assets/NBA CUT JERSEEY with SHORTS.jpg';
+import virginMary from '../assets/VIRGIN MARY (LAKERS INSPIRED) 2.jpg';
+
 const allProjects = [
-  // Brand Identity
+  // Graphic Design
   {
     id: 1,
-    title: 'Neon Horizons',
-    category: 'BRAND IDENTITY',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    title: 'Gaming Cover Art',
+    category: 'GRAPHIC DESIGN',
+    image: gamingCover,
     year: '2024',
-    description: 'Complete brand identity for a futuristic tech startup.',
+    description: 'Dynamic gaming cover photo with bold visual elements and striking composition.',
   },
   {
     id: 2,
-    title: 'Cyber Industries',
-    category: 'BRAND IDENTITY',
-    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80',
+    title: 'Gaming Solo Poster',
+    category: 'POSTER DESIGN',
+    image: gamingSolo,
     year: '2024',
-    description: 'Logo and visual identity system for a gaming company.',
+    description: 'Gaming poster design featuring solo player theme with dramatic visuals.',
   },
   {
     id: 3,
-    title: 'Flux Studio',
-    category: 'BRAND IDENTITY',
-    image: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?w=800&q=80',
-    year: '2023',
-    description: 'Brand refresh for a creative agency.',
+    title: 'Gaming Team Banner',
+    category: 'BRAND DESIGN',
+    image: gamingTeam,
+    year: '2024',
+    description: 'Team banner design for gaming community with cohesive branding elements.',
   },
-  // Web Design
+  // Apparel Design
   {
     id: 4,
-    title: 'Digital Dreams',
-    category: 'WEB DESIGN',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80',
+    title: 'Polo Shirt Design V1',
+    category: 'APPAREL DESIGN',
+    image: poloDesign1,
     year: '2024',
-    description: 'E-commerce website with immersive 3D experiences.',
+    description: 'Custom polo shirt design with unique pattern and branding.',
   },
   {
     id: 5,
-    title: 'Tech Vision',
-    category: 'WEB DESIGN',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+    title: 'Polo Shirt Design V2',
+    category: 'APPAREL DESIGN',
+    image: poloDesign2,
     year: '2024',
-    description: 'Corporate website for an AI solutions provider.',
+    description: 'Alternative polo shirt design variant with different color scheme.',
   },
   {
     id: 6,
-    title: 'Artisan Gallery',
-    category: 'WEB DESIGN',
-    image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80',
-    year: '2023',
-    description: 'Portfolio website for a contemporary art gallery.',
+    title: 'Polo Shirt Design V3',
+    category: 'APPAREL DESIGN',
+    image: poloDesign3,
+    year: '2024',
+    description: 'Third iteration of polo shirt design series with refined details.',
   },
-  // Poster Design
   {
     id: 7,
-    title: 'Cyber Punk',
-    category: 'POSTER DESIGN',
-    image: 'https://images.unsplash.com/photo-1563089145-599997674d42?w=800&q=80',
+    title: 'Polo Shirt Design V4',
+    category: 'APPAREL DESIGN',
+    image: poloDesign4,
     year: '2024',
-    description: 'Event poster for a cyberpunk-themed music festival.',
+    description: 'Final polo shirt design variant showcasing complete apparel collection.',
   },
   {
     id: 8,
-    title: 'Neon Nights',
-    category: 'POSTER DESIGN',
-    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80',
+    title: 'Esports Jersey Design',
+    category: 'APPAREL DESIGN',
+    image: esportsJersey1,
     year: '2024',
-    description: 'Series of posters for a nightlife event series.',
+    description: 'Professional esports jersey design with team branding and modern aesthetics.',
   },
   {
     id: 9,
-    title: 'Future Forward',
-    category: 'POSTER DESIGN',
-    image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&q=80',
-    year: '2023',
-    description: 'Conference poster design for a tech summit.',
+    title: 'Garitan Maroon',
+    category: 'APPAREL DESIGN',
+    image: garitanMaroon,
+    year: '2024',
+    description: 'Maroon variant of Garitan apparel design with bold styling.',
   },
-  // Album Art
   {
     id: 10,
-    title: 'Retro Wave',
-    category: 'ALBUM ART',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80',
+    title: 'Garitan White',
+    category: 'APPAREL DESIGN',
+    image: garitanWhite,
     year: '2024',
-    description: 'Album cover for a synthwave music producer.',
+    description: 'White variant of Garitan apparel design with clean aesthetics.',
   },
   {
     id: 11,
-    title: 'Midnight Drive',
-    category: 'ALBUM ART',
-    image: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?w=800&q=80',
+    title: 'NBA Cut Jersey',
+    category: 'APPAREL DESIGN',
+    image: nbaJersey,
     year: '2024',
-    description: 'Cover art for an electronic music EP.',
+    description: 'NBA-style cut jersey and shorts set with professional design.',
   },
   {
     id: 12,
-    title: 'Electric Soul',
-    category: 'ALBUM ART',
-    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80',
-    year: '2023',
-    description: 'Album artwork for an indie rock band.',
-  },
-  // UI/UX Design
-  {
-    id: 13,
-    title: 'Future Tech',
-    category: 'UI/UX DESIGN',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80',
+    title: 'Virgin Mary (Lakers Inspired)',
+    category: 'APPAREL DESIGN',
+    image: virginMary,
     year: '2024',
-    description: 'Mobile app design for a smart home controller.',
-  },
-  {
-    id: 14,
-    title: 'Finance Flow',
-    category: 'UI/UX DESIGN',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
-    year: '2024',
-    description: 'Dashboard design for a fintech platform.',
-  },
-  {
-    id: 15,
-    title: 'Health Hub',
-    category: 'UI/UX DESIGN',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
-    year: '2023',
-    description: 'Healthcare app interface design.',
+    description: 'Lakers-inspired design featuring Virgin Mary theme with purple and gold colors.',
   },
 ];
 
-const categories = ['ALL', 'BRAND IDENTITY', 'WEB DESIGN', 'POSTER DESIGN', 'ALBUM ART', 'UI/UX DESIGN'];
+const categories = ['ALL', 'GRAPHIC DESIGN', 'POSTER DESIGN', 'BRAND DESIGN', 'APPAREL DESIGN'];
 
 export const ProjectsDashboard = () => {
   const { isDark } = useTheme();

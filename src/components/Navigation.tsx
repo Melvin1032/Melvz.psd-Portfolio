@@ -40,8 +40,8 @@ export const Navigation = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a 
-              href="#hero" 
+            <a
+              href="#hero"
               className={`font-bold text-xl tracking-tight transition-colors ${
                               isDark ? 'text-white hover:text-[#ff1a1a]' : 'text-[#1a1a1a] hover:text-[#ff1a1a]'
                             }`}

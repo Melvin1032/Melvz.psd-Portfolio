@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Palette, Code, Layers } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
+import melvinImage from '../assets/melvin.png';
 
 const skills = [
   { icon: Palette, label: 'Brand Design', level: 95 },
@@ -27,7 +28,7 @@ export const About = () => {
           >
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+                src={melvinImage}
                 alt="Designer Portrait"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />

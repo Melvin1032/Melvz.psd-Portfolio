@@ -105,8 +105,8 @@ export const LiquidCursor = () => {
           opacity: { duration: 0.3 },
         }}
       >
-        <div 
-          className="w-full h-full rounded-full border-2 border-[#00f0ff]"
+        <div
+          className="w-full h-full rounded-full border-2 border-[#ff1a1a]"
           style={{
             opacity: isHovering ? 0.8 : 0.4,
           }}

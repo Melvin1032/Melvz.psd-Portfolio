@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send, Instagram, Twitter, Linkedin, Dribbble } from 'lucide-react';
+import { Mail, MapPin, Send, Instagram, Twitter, Linkedin, Github } from 'lucide-react';
 import { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 
 const socialLinks = [
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/john-melvin-macabeo-3061753b1/' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/Melvin1032' },
+  { icon: Mail, label: 'Email', href: 'mailto:jmmacabeo32@gmail.com' },
   { icon: Instagram, label: 'Instagram', href: '#' },
-  { icon: Twitter, label: 'Twitter', href: '#' },
-  { icon: Linkedin, label: 'LinkedIn', href: '#' },
-  { icon: Dribbble, label: 'Dribbble', href: '#' },
 ];
 
 export const Contact = () => {
@@ -63,12 +63,12 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="font-mono text-sm text-gray-500">EMAIL</p>
-                  <a 
-                    href="mailto:hello@mlvz.psd" 
+                  <a
+                    href="mailto:jmmacabeo32@gmail.com"
                     className={`hover:text-[#ff1a1a] transition-colors ${isDark ? 'text-white' : 'text-[#1a1a1a]'}`}
                     data-cursor="pointer"
                   >
-                    hello@mlvz.psd
+                    jmmacabeo32@gmail.com
                   </a>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="font-mono text-sm text-gray-500">LOCATION</p>
-                  <p className={isDark ? 'text-white' : 'text-[#1a1a1a]'}>Digital Nomad / Worldwide</p>
+                  <p className={isDark ? 'text-white' : 'text-[#1a1a1a]'}>Candon City, Ilocos Sur, Philippines 🇵🇭</p>
                 </div>
               </div>
             </div>
